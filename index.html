@@ -1,99 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Sets infromation for the browser to correctly handle the website-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal website of Theodore Colbert">
+    <meta name="keywords" content="theodore, colbert">
+    <meta name="author" content="Theodore Colbert">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-	<!-- Creates image and title that appears on the tab -->
-	<link rel="shortcut icon" href="Tab Circle.png" type="image">
-	<title>Theodore Colbert</title>
+    <!-- Creates image and title that appears on the tab -->
+    <link rel="shortcut icon" href="images/tab-circle.png" type="image">
+    <title>Theodore Colbert</title>
 
-	<!-- Sets infromation for the browser to correctly handle the website-->
-	<meta charset="UTF-8">
-	<meta name="description" content="Personal website of Theodore Colbert">
-	<meta name="keywords" content="theodore, colbert">
-	<meta name="author" content="Theodore Colbert">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" title="Theodore" src="images/theodore.jpeg" alt="Theodore">
+        </a>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/a6ec9b1109.js" crossorigin="anonymous"></script>
-</head>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-	<!-- Navbar -->
-	<nav>
-		<a href="index.html#Theodore">
-			<img class="logo" title="Theodore" src="Theodore Colbert.jpeg" alt="Theodore">
-		</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PROJECTS">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CONTACT">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		<input type="checkbox" id="menu">
-			<label for="menu" class="menuButton">
-				<!-- Creates menu icon using a font from 'fontawesome' -->
-				<i class="fas fa-bars"></i>
-			</label>
-		</input>
+    <div class="container my-5">
+      <!-- Main header -->
+      <h1 class="">About Me</h1>
 
-		<ul><h1>
-			<li><a href="index.html">About Me</a></li>
-			<li><a href="PROJECTS">Things I've Done</a></li>
-			<li><a href="index.html#contact">Contact Me</a></li>
-		</ul></h1>
-	</nav>
+      <div class="col-lg-8">
+        <p class="fs-5">
+          Hi there, I'm Theodore. I'm a second year student at the
+          University of Manchester studying Computer Science. I have a keen interest in
+          Software Engineering, Systems Engineering and Game Development. I'm also fascinated
+          by trains, submarines and ships - how they work and what they can be used for.
+          <br><br>
+          In my spare time I like to make games, short films and sometimes tinker with hardware
+          or robots. You can find some examples of the things I've done <a href="PROJECTS">here</a>.
+          I'm always up for working on something new, feel free to <a href="CONTACT">contact me</a> if you have any ideas
+          or need help on a project!
+        </p>
 
-	<!-- Main header -->
-	<h1 class="main">About Me</h1>
+        <hr class="col-2 my-4">
+      </div>
+    </div>
 
-	<!-- Summary -->
-	<div class="text">
-		<p class="main">
-			Hi there, I'm Theodore. I'm a second year student at the
-			University of Manchester studying Computer Science. I have a keen interest in
-			Software Engineering, Systems Engineering and Game Development. I'm also fascinated
-			by trains, submarines and ships - how they work and what they can be used for.
-			<br><br>
-			In my spare time I like to make games, short films and sometimes tinker with hardware
-			or robots. You can find some examples of the things I've done <a href="PROJECTS">here</a>.
-			I'm always up for working on something new, feel free to <a href="#contact">contact me</a> if you have any ideas
-			or need help on a project!
-		</p>
-	</div>
-
-	<!-- Profile pictures -->
-	<div class="main">
-		<div>
-			<img id="Theodore" class="main" title="Theodore" src="Theodore Colbert.jpeg" alt="Theodore">
-		</div>
-	</div>
-
-	<!-- Contacts -->
-	<div id="contact" class="text">
-		<a href="https://www.linkedin.com/in/theodore-colbert/">
-			<div class="social">
-				<img class="social" title="LinkedIn" src="LinkedIn.png" alt="LinkedIn">
-				<p class="social">
-					Contact me here if you want to collaborate on a project or for recruitment.
-				</p>
-			</div>
-		</a>
-	</div>
-	<div class="text" style="padding-top: 0; padding-bottom: 20px;">
-		<div class="social">
-			<a href="https://theodore-colbert.itch.io/">
-				<img class="social" title="Itch.io" src="Itch.png" alt="Itch.io">
-			</a>
-			<p class="social">
-				I upload my playable games to Itch.io and I'm currently working on more to add soon!
-			</p>
-		</div>
-	</div>
-	<div class="text" style="padding-top: 0; padding-bottom: 20px;">
-		<div class="social">
-			<a href="https://github.com/theodore-colbert">
-				<img class="social" title="GitHub" src="GitHub.png" alt="GitHub">
-			</a>
-			<p class="social">
-				I use GitLab for all my University projects but I'm starting to use GitHub for my personal ones.
-			</p>
-		</div>
-	</div>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,15 @@
+/*
+ * Custom CSS
+ */
+
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+/* Creates circular logo image */
+img.logo {
+    height: 60px;
+    width: 60px;
+    /* padding: 20px; */
+    border-radius: 50%;
+}
